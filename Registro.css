@@ -1,0 +1,91 @@
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+  font-size: 100%;
+  font-family: sans-serif;
+  background-color: #F5F3F3;
+}
+
+.navegar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4C8E4F;
+    position: sticky;
+    bottom: 0;
+  }
+  
+  .navegar ul li {
+    float: left;
+  }
+  
+  .navegar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navegar ul li a:hover:not(.active) {
+    background-color: #111;
+  }
+
+  .navegar ul li:last-child{
+      border-right: none;
+  }
+  
+  .activo {
+    background-color: #000;
+    color: #fff;
+  }
+
+  h2{
+      text-align: center;
+      color: #12450A;
+  }
+
+  * {box-sizing: border-box;}
+
+  .registro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30%;
+    transform: translate(-50%, -50%);
+  }
+
+.contenido {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input:focus {
+  border: 2px solid #4CAF50;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}

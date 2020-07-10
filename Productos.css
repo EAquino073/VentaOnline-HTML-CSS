@@ -1,0 +1,116 @@
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+  font-size: 100%;
+  font-family: sans-serif;
+  background-color: #F5F3F3;
+}
+
+.navegar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4C8E4F;
+    position: sticky;
+    bottom: 0;
+  }
+  
+  .navegar ul li {
+    float: left;
+  }
+  
+  .navegar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navegar ul li a:hover:not(.active) {
+    background-color: #111;
+  }
+
+  .navegar ul li:last-child{
+      border-right: none;
+  }
+  
+  .activo {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .productos{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+  }
+
+  .imagen {
+    box-sizing: border-box;
+    margin: 15px; 
+    padding: 10px;
+    border: 1px solid #e8f0ff;
+    background: black;
+    position: relative;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background: rgb(0,0,0,0.4);
+  }
+  
+  .imagen:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .btn {
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: none;
+    padding: 6px 10px;
+  }
+
+  .btn:hover {
+    opacity: 5;
+  }
